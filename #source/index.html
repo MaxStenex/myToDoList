@@ -2,15 +2,37 @@
 <html lang="ru">
 
 <head>
-	<title></title>
+	<title>Stenex`s ToDo List</title>
 	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 	<meta name="viewport" content="width = device - width, initial-scale = 1.0">
+	<link href="https://fonts.googleapis.com/css2?family=Sriracha&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 </head>
 
 <body>
+
 	<main>
+
+		<div class="container">
+			<div class="todo__wrapper">
+				<div class="todo__head">
+					<h1 class="todo__title">Список дел</h1>
+					<form class="todo__work todo-work">
+						<input type="text" class="todo-work__input" spellcheck="false" placeholder="Добавить">
+						<button class="todo-work__add-but"><img src="img/Accept.svg" alt="clear"></button>
+						<select class="todo-work__selector">
+							<option value="all" class="todo-work__select--all">Все</option>
+							<option value="completed" class="todo-work__select--completed">Сделано</option>
+							<option value="non-completed" class="todo-work__select--non-completed">Не сделано</option>
+						</select>
+					</form>
+				</div>
+				<ul class="todo__body todo-list"></ul>
+			</div>
+		</div>
+
 	</main>
+
 	<script type="text/javascript" src="js/main.js"></script>
 </body>
 
