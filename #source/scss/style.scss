@@ -99,7 +99,7 @@ body {
 
 		&__text {
          padding: 5px;
-         overflow: hidden;
+         word-break: break-all;
          &--completed{
             text-decoration: line-through;
             opacity: .4;
@@ -114,6 +114,7 @@ body {
             height: 100%;
             cursor: pointer;
             display: block;
+            pointer-events:none;
             &:hover{
                background-color: #c7c7c7;
                transition: 0.5s ease;

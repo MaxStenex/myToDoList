@@ -219,7 +219,7 @@ body {
 
 .todo-list__text {
   padding: 5px;
-  overflow: hidden;
+  word-break: break-all;
 }
 
 .todo-list__text--completed {
@@ -237,6 +237,7 @@ body {
   height: 100%;
   cursor: pointer;
   display: block;
+  pointer-events: none;
 }
 
 .todo-list__del-but img:hover {
