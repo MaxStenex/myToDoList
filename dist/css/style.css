@@ -95,20 +95,22 @@ h6 {
 body {
   font-family: 'Sriracha', cursive;
   font-size: 25px;
+  min-height: 100vh;
+  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background-size: cover;
 }
 
 .container {
   max-width: 1024px;
   margin: 0 auto;
   padding: 0px 10px;
-  padding-top: 50px;
+  padding-top: 100px;
 }
 
 .todo__wrapper {
   max-width: 700px;
   margin: 0px auto;
   padding: 50px 0px 20px 0px;
-  border: 1px solid black;
 }
 
 .todo__title {
@@ -125,16 +127,15 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 30px;
   margin: 30px 25px;
-  border: 1px solid black;
+  border: 1px solid #688BCB;
 }
 
 .todo-work__input {
   height: 100%;
   width: 100%;
   font-size: 30px;
-  padding: 5px;
+  padding: 7px;
 }
 
 .todo-work__input:focus::-webkit-input-placeholder {
@@ -158,7 +159,7 @@ body {
 }
 
 .todo-work__add-but {
-  background-color: transparent;
+  background-color: #fff;
 }
 
 .todo-work__add-but img {
@@ -168,7 +169,7 @@ body {
 }
 
 .todo-work__add-but img:hover {
-  background-color: #c7c7c7;
+  background-color: #A7BFEC;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -176,7 +177,12 @@ body {
 .todo-work__selector {
   font-size: 16px;
   font-family: inherit;
-  margin-left: 7px;
+}
+
+.todo-work__selector:hover {
+  background-color: #A7BFEC;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .todo-list {
@@ -205,10 +211,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  opacity: 0.85;
 }
 
 .todo-list__item:hover {
-  background-color: #e9e9e9;
+  background-color: #B8D1FF;
   -webkit-transition: 0.5s ease;
   transition: 0.5s ease;
 }
@@ -218,7 +225,7 @@ body {
 }
 
 .todo-list__text {
-  padding: 5px;
+  padding: 7px;
   word-break: break-all;
 }
 
@@ -230,6 +237,14 @@ body {
 .todo-list__del-but {
   background-color: transparent;
   height: 100%;
+  padding: 4px;
+  border-radius: 15px;
+}
+
+.todo-list__del-but:hover {
+  background-color: #A7BFEC;
+  -webkit-transition: 0.5s ease;
+  transition: 0.5s ease;
 }
 
 .todo-list__del-but img {
@@ -240,8 +255,4 @@ body {
   pointer-events: none;
 }
 
-.todo-list__del-but img:hover {
-  background-color: #c7c7c7;
-  -webkit-transition: 0.5s ease;
-  transition: 0.5s ease;
-}
+.webp body{ background: url(../img/bg.webp) no-repeat center center fixed; }
