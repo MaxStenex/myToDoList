@@ -96,7 +96,7 @@ body {
   font-family: 'Sriracha', cursive;
   font-size: 25px;
   min-height: 100vh;
-  background: url(../img/bg.jpg) no-repeat center center fixed;
+  background: url(/img/bg.jpg) no-repeat center center fixed;
   background-size: cover;
 }
 
@@ -255,4 +255,4 @@ body {
   pointer-events: none;
 }
 
-.webp body{ background: url(../img/bg.webp) no-repeat center center fixed; }
+.webp body{ background: url(/img/bg.webp) no-repeat center center fixed; }
